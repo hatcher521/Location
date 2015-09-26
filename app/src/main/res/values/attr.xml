@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="arrow_properties">
+        <attr name="arrow_title" format="string"></attr>
+    </declare-styleable>
+</resources>

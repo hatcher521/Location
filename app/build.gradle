@@ -1,0 +1,30 @@
+apply plugin: 'com.android.application'//声明构建的项目类型 android程序
+
+android {//设置编译android项目的参数
+    compileSdkVersion 19
+    buildToolsVersion "20.0.0"
+
+    defaultConfig {//defaultConfig中是一些基本配置，它会同时利用到debug/release版本上
+        applicationId "com.wideatech.location"//编译应用的包名
+        minSdkVersion 17
+        targetSdkVersion 19
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled true// 是否进行混淆
+            shrinkResources true//去除无用资源
+            //使用混淆文件的位置
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    // 编译libs目录下的所有jar包
+    compile project(':library')  //APP模块依赖library模块
+
+//    compile group: 'foo', name: 'foo', version: '0.1'
+//    compile 'foo:foo:0.1'
+}

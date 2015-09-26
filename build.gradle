@@ -1,0 +1,38 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {//设置脚本的运行环境
+
+    repositories {
+        jcenter()
+    }
+    dependencies {//这里的仓库配置是gradle脚本本身需要的资源
+        classpath 'com.android.tools.build:gradle:1.3.0'
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+//支持java依赖库管理，用于项目的依赖,这里的仓库是项目所有模块需要的资源
+    repositories {
+        jcenter()//gradle支持以下仓库格式  Ivy/Maven/Flat directory仓库
+
+//        mavenLocal()依赖本地库
+//        ivy{
+//            url ""
+//        }
+
+//        maven{
+//            url ""
+//        }
+
+//            mavenCentral()
+
+//        flatDir {
+//            dirs 'lib'
+//        }
+
+//        在lib目录下搜索依赖
+    }
+}

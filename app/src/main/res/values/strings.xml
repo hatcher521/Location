@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">巡更</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="warn_image">图片路径丢失</string>
+
+
+    <string name="textview">TextView</string>
+    <string name="history">历史数据</string>
+    <string name="set">设置</string>
+    <string name="realtime">实时数据</string>
+    <string name="location">定位</string>
+    <string name="map">地图显示</string>
+    <string name="btn_start_location">我的位置</string>
+    <string name="carlocation">车辆定位</string>
+    <string name="title_activity_data">DataActivity</string>
+    <string name="title_activity_tab">TabActivity</string>
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+
+    <string name="title_main">巡检区域及现场数据报警</string>
+
+    <string name="sliding_menu_left">左菜单</string>
+    <string name="sliding_menu_right">右菜单</string>
+
+    <string name="back">返回</string>
+    <string name="exit_login">退出登录</string>
+    <string name="setting_title">系统设置</string>
+
+    <string name="username">用户名:</string>
+    <string name="password">密码:</string>
+
+    <string-array name="pref_font_types">
+        <item>sans</item>
+        <item>serif</item>
+        <item>monospace</item>
+        <item>Yahei</item>
+    </string-array>
+    <string-array name="pref_font_types_values">
+        <item>sans</item>
+        <item>serif</item>
+        <item>monospace</item>
+        <item>Yahei</item>
+    </string-array>
+    <string name="title_activity_login">登录</string>
+    <string name="loadinginfo">加载中...</string>
+</resources>

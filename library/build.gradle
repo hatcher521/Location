@@ -1,0 +1,31 @@
+
+//声明构建的项目类型
+apply plugin: 'com.android.library'
+
+dependencies {
+    compile project(':actionbarsherlock')
+}
+
+android {
+    compileSdkVersion 19
+    buildToolsVersion "20.0.0"
+
+    defaultConfig {
+        minSdkVersion 17
+        targetSdkVersion 19
+    }
+//Android默认配置
+    sourceSets {
+        main {
+            java.srcDirs = ['src']
+            resources.srcDirs = ['src']
+            aidl.srcDirs = ['src']
+            renderscript.srcDirs = ['src']
+            res.srcDirs = ['res']
+            assets.srcDirs = ['assets']
+
+            manifest.srcFile 'AndroidManifest.xml'
+        }
+    }
+
+}
